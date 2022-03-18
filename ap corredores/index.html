@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="todo">
+    <h1>Aplicación para corredores facheros</h1>
+    <form method="POST" action="">
+            <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="name" onblur="verificar()"> <br><br>            
+
+            <label for="email"> Email:</label><br>
+                <input type="email" name="email" id="email" onblur="verificarcorreo()"> <br><br>
+
+        <h3>¿Alguna vez has corrido una carrera?</h3>
+
+            <input type="radio" id="si" name="seleccion" value="si" onclick="corredor()">
+                <label for="si">Sí</label> <br><br>
+
+            <div id="corredores"></div>
+            
+            <input type="radio" id="no" name="seleccion" value="no" onclick="sincorrer()">
+             <label for="no"> No</label> <br><br>
+    </form>
+
+    <h5>Una vez finalizado el formulario, envíe las respuestas</h5>
+
+        <button type="submit" onclick="enviar()"> Enviar</button>
+        <br><br>
+</div>
+
+</body>
+</html>
